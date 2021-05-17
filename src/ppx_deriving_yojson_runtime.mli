@@ -9,6 +9,7 @@ val map_bind : ('a -> 'b error_or) -> 'b list -> 'a list -> 'b list error_or
     cause a stack overflow *)
 val safe_map : ('a -> 'b) -> 'a list -> 'b list
 
+val ( = ) : 'a -> 'a -> bool (* NOTE: Used for [@default ...] *)
 module List : (module type of List)
 module String : (module type of String)
 module Bytes : (module type of Bytes)
