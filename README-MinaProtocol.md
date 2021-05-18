@@ -9,3 +9,6 @@ one change was made atop tag v3.5.3:
   - In `src/ppx_deriving_yojson_runtime.mli`, declare polymorphic `=`.
 
 This same change appeared in tag v3.6.0.
+
+When Mina is built with later versions of OCaml, such that v3.6.0 or later can
+be used, this fork won't be needed.
